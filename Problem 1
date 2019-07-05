@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
 	double box, sideline, premium, genAd,totalSale,totalTickets; 
-	
+
 	cout << " TOTAL TICKET SALES \n";
 	cout << "\n";
 	cout << "  Ticket Type ||   Ticket Price   || Tickets Sold: \n"; 
@@ -18,18 +18,20 @@ int main()
 	cout << "\nPremium   ==     $50       == "; cin >> premium; 
 	cout << "\n Sideline ==     $25       == "; cin >> genAd;
 	cout << "\n";
+	totalTickets = box + sideline + premium + genAd;
+	cout << "Total tickets Sold: " << totalTickets << endl;
 	cout << "==================================================================\n";
+	cout << "\n";
+	cout << fixed << showpoint << setprecision(2);
 	cout << "Total sale for Box tickets = " << box * 250 << endl; 
 	cout << "Total sale for Sideline tickets = " << sideline * 100 << endl; 
 	cout << "Total sale for Premium tickets = " << premium * 50 << endl; 
 	cout << "Total sale for General Admission tickets = " << genAd * 25 << endl; 
 	cout << "\n";
 	totalSale = (box*250)+(sideline*100)+(premium*50)+(genAd*25);
-	totalTickets = box + sideline + premium + genAd;
-	cout << "Total tickets Sold: " << totalTickets << endl;
 	cout << "Total ticket Sales: " << totalSale << endl;
 	
-	cout << fixed << setprecision(2);
+
 	
 _getch();
 
