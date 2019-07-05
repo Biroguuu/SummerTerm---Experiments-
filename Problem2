@@ -1,0 +1,28 @@
+//Problem2
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std; 
+
+int main()
+
+{
+
+	double mass, volume, density;
+
+	cout << fixed << showpoint << setprecision(2);
+	cout << " Input the mass of the object: "; cin >> mass;
+	cout << " Input the density of the object:  "; 	cin >> density; 
+	cout << "\n";
+	cout << " the mass of the object is: " << mass << "(g)" << endl;
+	cout << " The density of the object is: " << density << "(g/cm^3)"  << endl;
+	cout << "\n";
+	cout << " the volume of the object is: " << ( 0.25 * mass)/density << " g/cm^3" << endl;
+
+  
+	_getch();
+
+	return 0;
+  
+  }
