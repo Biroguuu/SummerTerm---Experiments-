@@ -1,0 +1,25 @@
+//Problem3
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std; 
+
+int main()
+
+{
+
+	double netBalance,d1,d2,avgDB,payment;
+	
+	
+	cout << "Enter your Balance: "; cin >> netBalance;
+	cout << "Enter your Payment: "; cin >> payment;
+	cout << "Billing Cycle: "; cin >> d1; 
+	cout << "day of payment made before billing cycle: "; cin >> d2;  
+
+  
+	_getch();
+
+	return 0;
+  
+  }
