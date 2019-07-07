@@ -9,14 +9,24 @@ int main()
 
 {
 
-	double netBalance,d1,d2,avgDB,payment;
+	double interest,netBalance,d1,d2,avgDB,payment;
 	
 	
 	cout << "Enter your Balance: "; cin >> netBalance;
 	cout << "Enter your Payment: "; cin >> payment;
 	cout << "Billing Cycle: "; cin >> d1; 
-	cout << "day of payment made before billing cycle: "; cin >> d2;  
-
+		if (d1 > 31 || d1 <= 0 )
+  	{
+  		cout << " Invalid Billing cycle!!!"; 
+	  }
+	  	
+  	else
+ 	cout << "day of payment made before billing cycle: "; cin >> d2;  
+   	avgDB = ((netBalance * d1 ) - (payment * d2)) / d1 ;
+  	
+	interest =  (avgDB * 0.0097);
+	cout << "Interest: " << interest << endl;  
+	
   
 	_getch();
 
